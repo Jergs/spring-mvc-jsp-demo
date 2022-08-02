@@ -2,13 +2,23 @@ package com.spring.demo.springmvcjspdemo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import java.util.LinkedHashMap;
 
 @AllArgsConstructor
 @Data
-@NoArgsConstructor
 public class Student {
 
     private String firstName;
     private String lastName;
+    private String country;
+    private LinkedHashMap<String, String> countryOptions;
+
+    public Student() {
+        countryOptions = new LinkedHashMap<>();
+        countryOptions.put("BR", "Brazil");
+        countryOptions.put("FR", "France");
+        countryOptions.put("DE", "Germany");
+        countryOptions.put("IN", "India");
+    }
 }
