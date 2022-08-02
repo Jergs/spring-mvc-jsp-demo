@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 
 @AllArgsConstructor
 @Data
@@ -13,8 +14,8 @@ public class Student {
     private String lastName;
     private String country;
     private LinkedHashMap<String, String> countryOptions;
-
     private String favouriteLanguage;
+    private List<String> operatingSystems;
 
     public Student() {
         countryOptions = new LinkedHashMap<>();
