@@ -14,6 +14,8 @@ public class Student {
     private String country;
     private LinkedHashMap<String, String> countryOptions;
 
+    private String favouriteLanguage;
+
     public Student() {
         countryOptions = new LinkedHashMap<>();
         countryOptions.put("BR", "Brazil");
