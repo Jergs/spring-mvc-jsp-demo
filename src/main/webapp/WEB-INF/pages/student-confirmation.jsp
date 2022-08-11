@@ -1,3 +1,4 @@
+<jsp:useBean id="student" scope="request" type="com.spring.demo.springmvcjspdemo.model.Student"/>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 

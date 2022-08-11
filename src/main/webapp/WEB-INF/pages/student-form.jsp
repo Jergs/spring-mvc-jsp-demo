@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <%--@elvariable id="student" type="com.spring.demo.springmvcjspdemo.model.Student"--%>
     <form:form action="processForm" modelAttribute="student">
 
         First name = <form:input path="firstName"/>
